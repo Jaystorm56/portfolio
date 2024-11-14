@@ -131,3 +131,438 @@ h2{
         font-size: 1.2em;
     }
 }
+
+
+.services-section {
+    background-color: #f2f2f2;
+}
+.services-section > h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: Arial;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+    padding-left:40px;
+}
+.styles-1{
+    width: 90%;
+    height: 330px;
+    background-image: url(../images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-1 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -32px;
+   
+}
+
+.styles-1 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+.styles-2{
+    width: 90%;
+    height: 330px;
+    background-image: url(../images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-2 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -33px;
+   
+}
+.styles-2 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+.styles-3{
+    width: 90%;
+    height: 330px; 
+    background-image: url(../images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 8px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-3 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -33px;
+   
+}
+.styles-3 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+.styles-4{
+    width: 90%;
+    height: 330px; 
+    background-image: url(../images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-4 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -33px;
+   
+}
+.styles-4 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+.styles-5{
+    width: 90%;
+    height: 330px; 
+    background-image: url(../images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;  
+    border-radius: 8px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-5 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -33px;
+   
+}
+.styles-5 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+.styles-6{
+    width: 90%;
+    height: 330px; 
+    background-image: url(../images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.styles-6 > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: -33px;
+   
+}
+.styles-6 > p:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+.services-section > a{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*MEDIA QUERY FOR SERVICES-SECTION*/
+@media screen and (max-width: 390px){
+    .services-section > h1{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: Arial;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        gap: 10px;
+        padding-left:40px;
+    }
+    .align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .styles-1{
+        width: 80%;
+        height: 300px;
+        background-image: url(../images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-1 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -35px;
+    }
+    .styles-2{
+        width: 80%;
+        height: 300px;
+        background-image: url(../images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-2 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -28px;
+    }
+    .styles-3{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-3 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -35px;
+    }
+    .styles-4{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-4 > p{
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -30px;
+       
+    }
+    .styles-5{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;  
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-5 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -50px;
+       
+    }
+    .styles-6{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+       
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-6 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -40px;
+       
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .services-section > h1{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: Arial;
+        padding-top: 10px;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        gap: 10px;
+        padding-left:40px;
+    }
+    .styles-1{
+        width: 80%;
+        height: 300px;
+        background-image: url(../images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-1 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -30px;
+    }
+    .styles-2{
+        width: 80%;
+        height: 300px;
+        background-image: url(../images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-2 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -30px;
+    }
+    .styles-3{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-3 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -10x;
+    }
+    .styles-4{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-4 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -35px;
+       
+    }
+    .styles-5{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;  
+        border-radius: 8px;
+        margin-top: 30px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-5 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -33px;
+       
+    }
+    .styles-6{
+        width: 80%;
+        height: 300px; 
+        background-image: url(../images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        margin-top: 30px;
+        position: relative;
+        transition: filter 0.5s ease;
+    }
+    .styles-6 > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        bottom: -33px;
+       
+    }
+
+}
