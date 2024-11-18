@@ -4,6 +4,81 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #f2f2f2;
+}
+
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75vh;
+    border: 1px solid red;
+}
+.info-img > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.info-text,.h5{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.h5{
+    font-size: 1.5rem;
+}
+
+.aboutme{
+    text-align: center;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 40em;
+}
+.github,
+.linkedin,
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #ff6600;
+    width: 7rem;
+    height: 2.2rem;
+    border-radius: 8px;
+    background-color: rgba(22, 21, 21, 0.945);
+    
+}
+.git-text > a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Styling for the blinking cursor */
+#typing::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.5s step-end infinite;
+    color: black;
+  }
+  
+  /* Cursor blinking animation */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
 
 .skills-section{
     font-family: Arial;
