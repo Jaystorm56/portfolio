@@ -1,4 +1,4 @@
-/* SKILLS-SECTION */
+/* CSS FOR SKILLS-SECTION */
 * {
     margin: 0;
     padding: 0;
@@ -179,7 +179,7 @@ h1 {
 }
 
 .columns{
-    width: 40%;
+    width: 100%;
 }
 
 h2{
@@ -231,7 +231,7 @@ h2{
     }
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY FOR SKILLS SECTION */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.8em;
@@ -254,6 +254,7 @@ h2{
     }
 }
 
+/* MEDIA QUERY FOR SKILLS SECTION */
 @media screen and (max-width: 768px) {
     .skills {
         flex-direction: column;
