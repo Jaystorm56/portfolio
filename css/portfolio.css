@@ -7,6 +7,43 @@
 body{
     background-color: #f2f2f2;
 }
+ 
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+ 
+  
+  body.dark-mode .header {
+    background-color: #1f1f1f;
+  }
+  
+  body.dark-mode a {
+    color: #1db954; /* Bright green accent for links in dark mode */
+  }
+
+  body.dark-mode .images p{
+      color: #1db954;
+  }
+  body.dark-mode #icon {
+    filter: invert(44%) sepia(93%) saturate(501%) hue-rotate(91deg) brightness(1);
+  }
+  
+  button#dark-mode-toggle {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  body.dark-mode button#dark-mode-toggle {
+    background-color: #1db954;
+    color: #000000;
+  }
+
 
 .main-section{
     display: flex;
@@ -14,6 +51,8 @@ body{
     justify-content: center;
     /* border: 1px solid red; */
 }
+
+
 .info{
     display: flex;
     flex-direction: column;
@@ -110,12 +149,12 @@ body{
 
 .skills-section{
     font-family: Arial;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
+    /* color: #333; */
     overflow: hidden;
 }
 
@@ -236,13 +275,14 @@ h2{
 }
 
 
-.services-section {
-    background-color: #f2f2f2;
+.anchor{
+    border: 2px solid cyan;
+    width: 400px;
 }
 .services-section > h1{
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
     font-family: Arial;
 }
@@ -259,22 +299,34 @@ h2{
     background-image: url(../images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
     background-size: cover; 
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 8px;
     margin-bottom: 30px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(50%); */
 }
 .styles-1 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -32px;
+    color: #fff;
+    /* position: absolute; */
+    /* bottom: -40px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
    
 }
 
-.styles-1 > p:hover{
+.styles-1 > .align:hover{
     text-decoration: 3px solid  #ff6600 underline;
 }
 
@@ -286,16 +338,26 @@ h2{
     background-size: cover; 
     background-position: center;
     border-radius: 8px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
+    
 }
 .styles-2 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -33px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+    /* position: absolute; */
+    /* bottom: -33px; */
    
 }
 .styles-2 > p:hover{
@@ -310,17 +372,25 @@ h2{
     background-size: cover; 
     background-position: center; 
     border-radius: 8px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
 }
 .styles-3 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -33px;
-   
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
 }
 .styles-3 > p:hover{
     text-decoration: 3px solid  #ff6600 underline;
@@ -333,16 +403,25 @@ h2{
     background-size: cover; 
     background-position: center;
     border-radius: 8px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
 }
 .styles-4 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -33px;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
    
 }
 .styles-4 > p:hover{
@@ -357,16 +436,25 @@ h2{
     background-size: cover; 
     background-position: center;  
     border-radius: 8px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
 }
 .styles-5 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -33px;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
    
 }
 .styles-5 > p:hover{
@@ -380,16 +468,25 @@ h2{
     background-position: center; 
     border-radius: 8px;
     margin-bottom: 30px;
-    position: relative;
+    /* position: relative; */
     transition: filter 0.5s ease;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
 }
 .styles-6 > p{
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    position: absolute;
-    bottom: -33px;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
    
 }
 .styles-6 > p:hover{
