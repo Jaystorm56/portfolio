@@ -179,15 +179,17 @@ h1 {
 
 .columns{
     width: 100%;
-    /* border: 1PX SOLID red; */
 }
 
-h2{
-    font-size: 1.9em;
-    margin-bottom: 15px;
-    font-family: "Brush Script MT", cursive;
-    margin-bottom: 20px;
+.d-s {
+    font-size: 2.9em;
+    line-height: 1.3; 
+    letter-spacing: 0.1em;
+    margin-bottom: 20px; 
+    font-family: "Brush Script MT", cursive; 
+    text-align: center;
 }
+
 
 .skill{
     margin-bottom: 25px;
