@@ -7,18 +7,18 @@
     width: 30em;
     height: 18vh;
     border: 1px solid red;
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
   }
 
-  .info{
+  /* .info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 125vh;
-    border: 1px solid red;
-}
-
+    border: 1px solid yellow;
+} */
+/* 
 .github,
 .linkedin,
 .mail{
@@ -33,8 +33,8 @@
     border-radius: 8px;
     background-color: rgba(22, 21, 21, 0.945);
     
-}
-
+} */
+/* 
 .aboutme{
   display: flex;
   flex-direction: column;
@@ -44,10 +44,10 @@
   text-align: center;
   border: 1px solid #ff6600;
   line-height: 30px;
-  width: 98%;
+  width: 80%;
   height: 50%;
   font-size: 1.3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
   
 }
