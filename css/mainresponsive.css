@@ -1,0 +1,53 @@
+@media screen and (max-width:375px) {
+  .socials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    width: 30em;
+    height: 18vh;
+    border: 1px solid red;
+    /* margin-bottom: 40px; */
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 125vh;
+    border: 1px solid red;
+}
+
+.github,
+.linkedin,
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #ff6600;
+    width: 9rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: rgba(22, 21, 21, 0.945);
+    
+}
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  border: 1px solid #ff6600;
+  line-height: 30px;
+  width: 98%;
+  height: 50%;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+}
