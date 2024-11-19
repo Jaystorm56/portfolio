@@ -135,9 +135,7 @@ body.dark-mode {
     animation: blink 0.5s step-end infinite;
     color: black;
   }
-  #typing{
-      /* border: 1px solid green; */
-  }
+  
   
   /* Cursor blinking animation */
   @keyframes blink {
@@ -159,7 +157,7 @@ body.dark-mode {
 }
 
 .container {
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     text-align: center;
     opacity: 0;
@@ -169,7 +167,7 @@ body.dark-mode {
 
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 20px;
 }
 
@@ -183,7 +181,7 @@ h1 {
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 1.9em;
     margin-bottom: 15px;
     font-family: "Brush Script MT", cursive;
     margin-bottom: 20px;
@@ -234,11 +232,11 @@ h2{
 /* MEDIA QUERY FOR SKILLS SECTION */
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1.8em;
     }
 
     .columns {
@@ -267,11 +265,11 @@ h2{
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 }
 
