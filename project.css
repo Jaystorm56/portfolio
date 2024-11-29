@@ -1,0 +1,584 @@
+/* .anchor{
+    border: 2px solid cyan;
+    width: 400px;
+} */
+.projects-section > h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-family: "Brush Script MT", cursive; 
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+    padding-left:40px;
+}
+.styles-1{
+    width: 90%;
+    height: 330px;
+    background-image: url(./images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(50%); */
+}
+.styles-1 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* position: absolute; */
+    /* bottom: -40px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+   
+}
+
+.styles-1 > .align:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+
+.styles-2{
+    width: 90%;
+    height: 330px;
+    background-image: url(./images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(70%); */
+    
+}
+.styles-2 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+    /* position: absolute; */
+    /* bottom: -33px; */
+   
+}
+.styles-2 > a:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+.styles-3{
+    width: 90%;
+    height: 330px; 
+    background-image: url(./images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 8px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(70%); */
+}
+.styles-3 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+}
+.styles-3 > a:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+.styles-4{
+    width: 90%;
+    height: 330px; 
+    background-image: url(./images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(70%); */
+}
+.styles-4 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+   
+}
+.styles-4 > a:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+
+.styles-5{
+    width: 90%;
+    height: 330px; 
+    background-image: url(./images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center;  
+    border-radius: 8px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(70%); */
+}
+.styles-5 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+   
+}
+.styles-5 > a:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+.styles-6{
+    width: 90%;
+    height: 330px; 
+    background-image: url(./images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 8px;
+    margin-bottom: 30px;
+    /* position: relative; */
+    transition: filter 0.5s ease;
+    /* filter: brightness(70%); */
+}
+.styles-6 > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* position: absolute;
+    bottom: -33px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+   
+}
+.styles-6 > a:hover{
+    text-decoration: 3px solid  #ff6600 underline;
+}
+
+.services-section > a{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-section > a{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.experiences-section {
+    
+}
+.main{
+    margin-top: 40px;
+    margin-left: 10%;
+}
+.heading{
+    text-align: center;
+}
+.heading > h1{
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: "Brush Script MT", cursive; 
+    margin-top: 50px;
+}
+.heading > p{
+    font-size: 1.1rem;
+    /* font-weight: 200; */
+    font-family: Arial;
+}
+.body{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(255, 102, 0, 0.4);
+    width: 90%;
+}
+.body h3{
+    color: #ff6600 ;
+}
+.body h3,p {
+    line-height: 30px;
+}
+
+.body >img{
+    width: 120px;
+}
+.details{
+    border-radius: 5px;
+    padding: 10px;
+}
+.details h1, p{
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY FOR PROJECTS-SECTION*/
+@media screen and (max-width: 390px){
+    .projects-section > h1{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: Arial;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        margin-right:35px;
+    }
+    .align{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .styles-1{
+        width: 80%;
+        height: 300px;
+        background-image: url(./images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-1 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -35px; */
+    }
+    .styles-2{
+        width: 80%;
+        height: 300px;
+        background-image: url(./images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-2 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -28px; */
+    }
+    .styles-3{
+        width: 80%;
+        height: 300px; 
+        background-image: url(./images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        margin-bottom: 25px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-3 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -35px; */
+    }
+    .styles-4{
+        width: 80%;
+        height: 300px; 
+        background-image: url(./images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-4 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -30px; */
+       
+    }
+    .styles-5{
+        width: 80%;
+        height: 300px; 
+        background-image: url(./images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;  
+        border-radius: 8px;
+        margin-top: 15px !important;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-5 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -50px;
+        */
+    }
+    .styles-6{
+        width: 80%;
+        height: 300px; 
+        background-image: url(./images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        margin-bottom: 25px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-6 > a{
+        font-size: 1.2rem !important ;
+        font-weight: 200;
+        color: white !important;
+        /* position: absolute;
+        bottom: -40px; */
+       
+    }
+    .projects-section > a{
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .projects-section > h1{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.8rem;
+        font-weight: 400;
+        font-family: Arial;
+        padding-top: 10px;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        gap: 10px;
+        margin-left:35px
+    }
+    .styles-1{
+        width: 90%;
+        height: 300px;
+        background-image: url(./images/edho-pratama-yeB9jDmHm6M-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-1 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -30px; */
+    }
+    .styles-2{
+        width: 90%;
+        height: 300px;
+        background-image: url(./images/firmbee-com-DfMMzzi3rmg-unsplash.jpg);
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-2 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -30px; */
+    }
+    .styles-3{
+        width: 90%;
+        height: 300px; 
+        background-image: url(./images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-3 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -10x; */
+    }
+    .styles-4{
+        width: 90%;
+        height: 300px; 
+        background-image: url(./images/panos-sakalakis-j9EtVGr0piI-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-4 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -35px; */
+       
+    }
+    .styles-5{
+        width: 90%;
+        height: 300px; 
+        background-image: url(./images/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center;  
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-5 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -33px; */
+       
+    }
+    .styles-6{
+        width: 90%;
+        height: 300px; 
+        background-image: url(./images/traxer-kM6QNrgo0YE-unsplash.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 8px;
+        /* position: relative; */
+        transition: filter 0.5s ease;
+    }
+    .styles-6 > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        /* position: absolute;
+        bottom: -33px; */
+    
+    }
+    .projects-section > a{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

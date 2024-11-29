@@ -1,4 +1,7 @@
+import theme from "./theme.js";
+
 document.addEventListener("DOMContentLoaded", () => {
+  theme();
   const text = "Hello, I'm Olaleye Michael";
   const typingElement = document.getElementById("typing");
   let index = 0;
@@ -34,27 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start the typing effect
   typeEffect();
 
-  const toggleButton = document.getElementById("dark-mode-toggle");
-  
-  // Check if the user previously enabled dark mode
-  if (localStorage.getItem("dark-mode") === "enabled") {
-    document.body.classList.add("dark-mode");
-    toggleButton.textContent = "☀️ Light Mode";
-  }else {
-    document.body.classList.remove("dark-mode");
-    toggleButton.textContent = "🌙 Dark Mode"; // Change button text to dark mode
-  }
-
-  toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    
-    // Save preference to localStorage
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("dark-mode", "enabled");
-      toggleButton.textContent = "☀️ Light Mode";
-    } else {
-      localStorage.setItem("dark-mode", "disabled");
-      toggleButton.textContent = "🌙 Dark Mode";
-    }
-  });
 });

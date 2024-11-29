@@ -1,90 +1,53 @@
-@media screen and (max-width:375px) {
-  .socials{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    row-gap: 10px;
-    width: 25em;
-    height: 120px;
+@media (max-width: 768px) {
+  .desktop-header {
+    display: none; 
   }
 
-  .info{
+  .mobile-header {
+    display: flex;
+    background: url(../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: right center;
+  }
+
+  .main-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 900px;
+    justify-content: space-evenly;
+    min-height: 170vh;
 }
 
-.github,
-.linkedin,
-.mail{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 2px solid #ff6600;
-    width: 8rem;
-    height: 3.2rem;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    background-color: rgba(22, 21, 21, 0.945);
-    
-}
-.download{
-  background-color: black;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 2px solid #ff6600;
-  width: 16rem;
-  height: 3rem;
-  border-radius: 8px;
-  color: #fff;
-  background-color: rgba(22, 21, 21, 0.945);
+main{
+  background: url(../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  margin-bottom: 100px;
+  /* background-position:center ; */
 }
 
-.aboutme{
+.profilepic img {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 30px #ff6600;
+  object-fit: cover; 
+}
+
+.info{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  text-align: center;
-  line-height: 30px;
-  width: 95%;
-  height: 70vh;
-  font-size: 1.3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 30px;
+  height: 100vh;
+  width: 99%;
 }
-.h5{
+
+#typing{
   font-size: 1.8rem;
 }
-#typing{
-  font-size: 2.1rem;
-}
-  
-}
-
-@media screen and (min-width:376px) and (max-width:440px) {
-  .socials{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    row-gap: 10px;
-    width: 25em;
-    height: 120px;
-  }
-
-  .info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 900px;
-}
 
 .aboutme{
   display: flex;
@@ -93,21 +56,22 @@
   justify-content: center;
   gap: 20px;
   text-align: center;
-  line-height: 30px;
-  width: 95%;
-  height: 70vh;
-  font-size: 1.3rem;
+  width: 99%;
+  height: 65vh;
+  font-size: 1.2rem;
+  font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.h5{
-  font-size: 1.6rem;
+
+.sectin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
-#typing{
-  font-size: 2.1rem;
-}
-
-
-
 
 }
+
