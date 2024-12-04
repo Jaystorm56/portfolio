@@ -579,95 +579,207 @@ button {
   }
   
 
-.skills-section{
-    font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background: url(../images/wave\ \(1\).svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
+/* SKILLS SECTION */
+.skills-section {
+  position: relative;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 0;
 }
 
-.container {
-    width: 95%;
-    max-width: 1200px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-50px);
-    animation: fallIn 1s ease-out forwards;
+/* Wave animation background */
+.skills-section::before,
+.skills-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Double the width for smooth animation */
+  height: 100%;
+  background: linear-gradient(to right, #ff8800, #f79b46); /* Ocean blue gradient */
+  opacity: 0.4; /* Subtle visibility */
+  z-index: -1; /* Behind the content */
+  clip-path: polygon(0% 50%, 10% 45%, 20% 50%, 30% 55%, 40% 50%, 50% 45%, 60% 50%, 70% 55%, 80% 50%, 90% 45%, 100% 50%, 100% 100%, 0% 100%); /* Smooth, curved wave pattern */
+}
+
+.skills-section::before {
+  animation: wave-animation 8s linear infinite; /* First wave animation */
+}
+
+.skills-section::after {
+  animation: wave-animation 6s linear infinite; /* Second wave with slower speed */
+  top: 20px; /* Offset to create separation */
+}
+
+/* Wave animation */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-between;
-}
-
-.columns{
-    width: 100%;
+.skills-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .d-s {
-    font-size: 2.9em;
-    line-height: 1.3; 
-    letter-spacing: 0.1em;
-    margin-bottom: 20px; 
-    font-family: "Brush Script MT", cursive; 
-    text-align: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #444;
+  position: relative;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Make sure title appears above images */
+  opacity: 0; /* Hidden by default */
+  animation: dropIn 1s ease-out forwards; /* Dropping animation */
+  animation-delay: 0.5s;
 }
 
-
-.skill{
-    margin-bottom: 25px;
+/* Columns for skills */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0; /* Hidden by default */
+  animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation */
+  animation-delay: 0.7s; /* Add delay for smoother effect */
 }
 
-.skill span{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 22px;
+/* Skill Block */
+.skill {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(255, 255, 255); /* Vibrant red */
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 
-.progress-bar{
-    height: 8px;
-    background-color: #ccc;
-    border-radius: 5px;
-    overflow: hidden;
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.progress{
-    height: 100%;
-    background-color: #ff6600;
-    border-radius: 5px 0 0 5px;
+/* Skill Icon (Image) */
+.icon img {
+  width: 100%; /* Slightly smaller than the skill box */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Avoid cropping the image */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hidden Info Section */
+.info {
+  position: absolute;
+  top: -100%; /* Start above the skill block */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0); /* No initial transform */
+  opacity: 0; /* Hidden by default */
+  transition: all 0.6s ease-in-out; /* Smooth slide-in effect */
+}
+
+/* Slide in from the top on hover */
+.skill:hover .info {
+  top: 0; /* Slide down to fully cover the skill block */
+  opacity: 1; /* Make it visible */
+}
+
+/* Info Text Inside */
+.info span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  position: relative;
+  width: 80%;
+  height: 10px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in for the progress bar */
+}
+
+.progress {
+  width: 0; /* Start with no progress */
+  height: 100%;
+  background: linear-gradient(90deg, #f9a825, #ff6f00);
+  border-radius: 5px;
+  transition: width 1.5s ease-out; /* Smooth width transition */
+}
+
+/* Hover Effects */
+.skill:hover .progress-bar {
+  opacity: 1; /* Show the progress bar */
+}
+
+.skill:hover .progress {
+  width: var(--progress-width); /* Fill the progress bar on hover */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Drop-In Animation */
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Progress Bar Fill Animation */
+@keyframes fillProgress {
+  from {
     width: 0;
-    animation: loadProgress 2s ease forwards;
+  }
+  to {
+    width: var(--progress-width);
+  }
 }
 
-@keyframes fallIn {
-    from{
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-@keyframes loadProgress {
-    to {
-        width: var(--progress-width);
-    }
-}
+
 
 
 .card-container {
