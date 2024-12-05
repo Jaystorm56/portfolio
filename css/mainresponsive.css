@@ -75,3 +75,135 @@ main{
 
 }
 
+/* RESPONSIVE FOR SKILLS SECTION */
+@media (max-width: 412px) {
+  .skills-section {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .d-s {
+    font-size: 1.5rem; /* Smaller title font size */
+    margin-bottom: 1.5rem; /* Reduce spacing below title */
+  }
+
+  .columns {
+    gap: 1rem; /* Less spacing between skill blocks */
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+  }
+
+  .skill {
+    width: 80px; /* Smaller skill block size */
+    height: 80px;
+    font-size: 1.2rem; /* Smaller font size inside skill blocks */
+    border-radius: 8px; /* Slightly reduced border radius */
+  }
+
+  .icon img {
+    width: 70%; /* Proportionally smaller icons */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .info {
+    top: -100%; /* Initially hidden */
+    opacity: 0; /* Initially invisible */
+    transition: all 0.6s ease-in-out; /* Smooth transition */
+  }
+
+  .skill:hover .info {
+    top: 0; /* Slide down to reveal */
+    opacity: 1; /* Make visible */
+  }
+
+  .info span {
+    font-size: 0.9rem; /* Smaller text size */
+    text-align: center;
+    line-height: 1.2; /* Improved readability */
+  }
+
+  .progress-bar {
+    height: 6px; /* Thinner progress bar */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .progress {
+    width: 0; /* No initial progress */
+    height: 100%;
+    background: linear-gradient(90deg, #f9a825, #ff6f00);
+    border-radius: 3px; /* Slightly reduced border radius */
+    transition: width 1.5s ease-out; /* Smooth progress filling */
+  }
+
+  .skill:hover .progress-bar {
+    opacity: 1; /* Show progress bar on hover */
+  }
+
+  .skill:hover .progress {
+    width: var(--progress-width, 70%); /* Fill progress dynamically */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .d-s {
+    font-size: 1.8rem; /* Adjust font size of the title */
+    margin-bottom: 2rem; /* Slightly reduce bottom margin */
+  }
+
+  .columns {
+    gap: 1.5rem; /* Reduce spacing between skill blocks */
+  }
+
+  .skill {
+    width: 100px; /* Smaller skill block size */
+    height: 100px;
+    font-size: 1.5rem; /* Adjust font size inside skill blocks */
+  }
+
+  .icon img {
+    width: 100%; /* Smaller icons */
+    transition: transform 0.3s ease-in-out; /* Ensure smooth scaling */
+  }
+
+  .info {
+    top: -100%; /* Initially hidden */
+    opacity: 0; /* Initially invisible */
+    transition: all 0.6s ease-in-out; /* Smooth transition */
+  }
+
+  .skill:hover .info {
+    top: 0; /* Slide down to reveal */
+    opacity: 2; /* Make visible */
+  }
+
+  .info span {
+    font-size: 1rem; /* Smaller text size for the info section */
+  }
+
+  .progress-bar {
+    height: 8px; /* Thinner progress bar */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+  }
+
+  .progress {
+    width: 0; /* No initial progress */
+    height: 100%;
+    background: linear-gradient(90deg, #f9a825, #ff6f00);
+    border-radius: 5px;
+    transition: width 1.5s ease-out; /* Smooth progress filling */
+  }
+
+  .skill:hover .progress-bar {
+    opacity: 1; /* Show progress bar on hover */
+  }
+
+  .skill:hover .progress {
+    width: var(--progress-width, 70%); /* Fill progress dynamically */
+  }
+}
