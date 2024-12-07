@@ -631,7 +631,8 @@ button {
 
 .d-s {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.6rem;
+  font-family: "Brush Script MT", cursive; 
   margin-bottom: 2.5rem;
   color: #444;
   position: relative;
