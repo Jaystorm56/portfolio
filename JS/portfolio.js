@@ -38,3 +38,60 @@ document.addEventListener("DOMContentLoaded", () => {
   typeEffect();
 
 });
+
+let currentIndex = 0;
+let isMouseDown = false;
+let startX, scrollLeft;
+const slider = document.querySelector('.testimonial-slider');
+const testimonials = document.querySelectorAll('.testimonial');
+const circles = document.querySelectorAll('.navigation-circles .circle');
+const totalSlides = testimonials.length;
+
+function showSlide(index) {
+  // Change the transform to slide
+  slider.style.transform = `translateX(-${index * 100}%)`;
+
+  // Update the active circle
+  circles.forEach((circle, i) => {
+    circle.classList.toggle('active', i === index);
+  });
+}
+
+// Auto Slide every 10 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}, 10000); // Change every 10 seconds
+
+// Implement manual sliding by dragging
+slider.addEventListener('mousedown', (e) => {
+  isMouseDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+  e.preventDefault(); // Prevent text selection
+});
+
+slider.addEventListener('mouseleave', () => {
+  isMouseDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+  isMouseDown = false;
+
+  // Update current slide after drag
+  currentIndex = Math.round(slider.scrollLeft / slider.offsetWidth);
+  showSlide(currentIndex);
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isMouseDown) return;
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust the speed of sliding
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+slider.addEventListener('mouseup', () => {
+  // Update current slide after drag
+  currentIndex = Math.round(slider.scrollLeft / slider.offsetWidth);
+  showSlide(currentIndex);
+});
